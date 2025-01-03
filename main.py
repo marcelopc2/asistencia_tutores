@@ -11,6 +11,8 @@ from decouple import config
 API_TOKEN = config("TOKEN")
 CANVAS_API_URL = 'https://canvas.uautonoma.cl/api/v1/'
 
+st.set_page_config(page_title="Generador de reporte de asistencia", page_icon="😔")
+
 headers = {
     'Authorization': f'Bearer {API_TOKEN}'
 }
